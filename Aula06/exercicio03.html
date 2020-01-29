@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,13 +17,18 @@
     </style>
 </head>
 <body>
-    <h1>Olá MUNDO </h1>
-    <p>Já me livrei da maldição</p>
-    <script>{
-        alert("Minha primeira mensagem")
-        confirm("Está gostando de JS?")
-        prompt('Qual seu nome?')
-    }
+    <h1>Olá MUNDO</h1>
+    <p>Aprendendo Javascript cada dia mais.</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro numero: '))
+        var s = (n1 + n2)
+        
+        
+        window.alert(`A soma entre os números ${n1} e ${n2} é igual a ${s}.`)
+        //(número + número) adição
+        //(string + string) concatenação.
     </script>
+    
 </body>
 </html>

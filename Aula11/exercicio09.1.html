@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: slategray;
+            color: snow;
+        }
+        h1 {
+            color: snow;
+            font: normal 25pt arial;
+        }
+        strong{
+            color: blueviolet;
+        }
+         
+    </style>
+</head>
+<body>
+    <h1>Qual seu pais?</h1>
+    Pais: <input type="text" name="txtpai" id="txtpai">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar(){
+            var txtp = document.querySelector('input#txtpai')
+            var res = document.querySelector('div#res')
+            var pais = String(txtp.value)
+            res.innerHTML = `<p>Seu Pais é <strong>${pais}</strong>.</p>`
+                if (pais == 'Brasil') {
+                    res.innerHTML = '<p>Você é <strong>BRASILEIRO</strong></p>'
+                } else {
+                res.innerHTML = '<p>Você é <strong>ESTRANGEIRO</strong></p>'
+                }
+                
+        }
+    </script>
+    
+</body>
+</html>
